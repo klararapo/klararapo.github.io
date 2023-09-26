@@ -1,0 +1,12 @@
+<div class="nav-container">
+    <mat-card class="nav">
+        <button
+            mat-button
+            class="btn-link"
+            *ngFor="let country of countries"
+            id="{{ country | lowercase }}Select"
+            (click)="goToCountyRoute(country)">
+            {{ country }}
+        </button>
+    </mat-card>
+</div>

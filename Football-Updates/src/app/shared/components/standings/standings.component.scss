@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+    .standing-container {
+        width: 50%;
+        margin-top: 20px;
+    }
+    table,
+    th {
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        border-spacing: 0px;
+        border-collapse: true;
+    }
+    thead {
+        align-items: center;
+    }
+}

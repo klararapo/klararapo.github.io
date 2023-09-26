@@ -1,0 +1,22 @@
+<div class="container">
+    <mat-card class="team-container">
+        <table class="team-table">
+            <tbody *ngIf="teamResults$ | async as teamResults">
+                <tr *ngFor="let result of teamResults">
+                    <td>
+                        <img [src]="result.teams.home.logo" alt="{{ result.teams.home.name }} Logo" class="team-logo" />
+                    </td>
+                    <td>{{ result.teams.home.name }}</td>
+                    <td>{{ result.goals.home }}</td>
+                    <td>-</td>
+                    <td>{{ result.goals.away }}</td>
+                    <td>{{ result.teams.away.name }}</td>
+                    <td>
+                        <img [src]="result.teams.away.logo" alt="{{ result.teams.away.name }} Logo" class="team-logo" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card>
+    <button class="back-button" mat-raised-button color="primary" (click)="goBack()">Back</button>
+</div>

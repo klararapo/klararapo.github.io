@@ -1,0 +1,13 @@
+<td>{{ standInput.rank }}</td>
+<td>
+    <img [src]="standInput.team.logo" alt="{{ standInput.team.name }} Logo" class="team-logo" />
+</td>
+<td [routerLink]="['team/' + standInput.team.id]">
+    {{ standInput.team.name }}
+</td>
+<td>{{ standInput.all.played }}</td>
+<td>{{ standInput.all.win }}</td>
+<td>{{ standInput.all.lose }}</td>
+<td>{{ standInput.all.draw }}</td>
+<td>{{ standInput.goalsDiff }}</td>
+<td>{{ standInput.points }}</td>

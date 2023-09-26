@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/c9e7c3d9ac849038e30994ef18ac7492.jpg');
+    height: min-content;
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding-bottom: 100px;
+    .header {
+        align-self: center;
+        color: white;
+    }
+}

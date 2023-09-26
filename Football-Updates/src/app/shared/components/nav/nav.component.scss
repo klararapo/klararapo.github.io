@@ -1,0 +1,27 @@
+.nav-container 
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 5%;
+        background-color: rgba(235, 227, 227, 0.575);
+    }
+    .btn-link
+    {
+        margin-right: 30px;
+    }
+    .btn-link:hover
+    {
+        font-weight: 600;
+        color: rgb(3, 22, 126);
+    }
